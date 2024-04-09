@@ -14,10 +14,9 @@ body {
     #222222 10px,
     #222222 20px
   );
-  /* background-color: #1D1D1B; */
   text-align: center;
   font-family: myFirstFont;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 h1 {
@@ -29,6 +28,16 @@ h1 {
   height: auto; 
 } 
 
+@media (max-width: 767.98px) { 
+  .main {
+    padding: 0.3rem;
+  }
+  .main-logo { 
+    max-width: 300px; 
+  } 
+}
+
+
 .main-content {
     display: table-cell;
     vertical-align: middle;
@@ -37,4 +46,22 @@ h1 {
 a {
   color: #FA84FF;
   text-decoration: none;
+}
+
+.sm-social-buttons {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sm-social-button > a > i {
+  display:inline-block;
+  line-height: 55px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: #FA84FF;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  vertical-align: bottom;
 }
