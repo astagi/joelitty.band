@@ -7,14 +7,27 @@ html,
 body {
   height: 100%;
   color: white;
-  background-color: #1D1D1B;
+  background: repeating-linear-gradient(
+    90deg,
+    #1D1D1B,
+    #1D1D1B 10px,
+    #222222 10px,
+    #222222 20px
+  );
+  /* background-color: #1D1D1B; */
   text-align: center;
   font-family: myFirstFont;
+  font-size: 24px;
 }
 
 h1 {
-  font-size: 1000;
 }
+
+.main-logo { 
+  filter: drop-shadow(5px 5px 5px #FA84FF); 
+  max-width: 400px; 
+  height: auto; 
+} 
 
 .main-content {
     display: table-cell;
