@@ -1,0 +1,22 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/jd.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  color: white;
+  background-color: #1D1D1B;
+  text-align: center;
+  font-family: myFirstFont;
+}
+
+h1 {
+  font-size: 1000;
+}
+
+.main-content {
+    display: table-cell;
+    vertical-align: middle;
+}
