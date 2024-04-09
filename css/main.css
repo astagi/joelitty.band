@@ -24,8 +24,8 @@ h1 {
 }
 
 .main-logo { 
-  filter: drop-shadow(5px 5px 5px #FA84FF); 
-  max-width: 400px; 
+  filter: drop-shadow(3px 3px 3px #FA84FF); 
+  max-width: 350px; 
   height: auto; 
 } 
 
