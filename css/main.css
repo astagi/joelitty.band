@@ -1,21 +1,13 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url(../fonts/jd.ttf);
+html, body, pre, code, kbd, samp {
+  font-family: "Press Start 2P";
 }
 
 html,
 body {
   height: 100%;
-  color: rgba(255, 255, 255, 0.96);
-  background: repeating-linear-gradient(
-    90deg,
-    #1D1D1B,
-    #1D1D1B 10px,
-    #222222 10px,
-    #222222 20px
-  );
+  color: #4A422F;
+  background-color: #FEBC58;
   text-align: center;
-  font-family: myFirstFont;
   font-size: 36px;
 }
 
@@ -37,8 +29,7 @@ body {
 }
 
 .main-logo { 
-  filter: drop-shadow(3px 3px 3px #FA84FF); 
-  max-width: 350px; 
+  max-width: 500px; 
   height: auto; 
 } 
 
@@ -55,8 +46,8 @@ body {
 }
 
 a {
-  color: rgba(255, 255, 255, 0.96);
-  filter: drop-shadow(1px 1px 1px #FA84FF); 
+  color: #5E8EB3;
+  filter: drop-shadow(1px 1px 1px #5E8EB3); 
   text-decoration: none;
 }
 
@@ -70,11 +61,36 @@ a {
   line-height: 55px;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  border-color: rgba(255, 255, 255, 0.96);
-  filter: drop-shadow(1px 1px 1px #FA84FF); 
-  border-width: 2px;
-  border-style: solid;
   text-align: center;
   vertical-align: bottom;
+}
+
+.github-link {
+  position: fixed;
+  top: 100px;
+  right: -240px;
+  z-index: 999;
+  display: flex;
+  height: 100px;
+  width: auto;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.github-link.active {
+  right: 2vw;
+}
+
+.github-link > p.nes-balloon {
+  align-self: flex-start;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.logo-baloon {
+
+  position: fixed;
+  transform: rotate(-45deg);
 }
