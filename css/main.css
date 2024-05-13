@@ -11,9 +11,19 @@ body {
   font-size: 4vw;
 }
 
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2vw;
+}
+
 @media screen and (min-width: 1200px) {
   html, body {
     font-size: 36px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
 
@@ -61,6 +71,7 @@ a {
 .sm-social-buttons {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .claim {
@@ -69,6 +80,7 @@ a {
 }
 
 .github-link {
+  opacity: 0;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -76,7 +88,13 @@ a {
   max-height: 100px;
   color: #333;
   text-decoration: none;
-  transition: all 0.3s ease;
+  animation-name: show;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0,.99,0,.97);
+;
 }
 
 .github-link.active {
@@ -91,9 +109,23 @@ a {
 
 .logo-baloon {
   z-index: 998;
-  right: -18vw;
+  right: -30vw;
   top: 4vw;
   position: fixed;
   transform: rotate(-45deg);
   max-width: 50vw;
+  animation-name: move;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0,.99,0,.97);
+}
+
+@keyframes move {
+  from {right: -30vw;}
+  to {right: -18vw;}
+}
+
+@keyframes show {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
