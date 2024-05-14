@@ -1,3 +1,9 @@
+:root {
+  --main-link-color:#5E8EB3;
+  --main-text-color: #4A422F;
+  --main-bg-color: #FEBC58;
+}
+
 html, body, pre, code, kbd, samp {
   font-family: "Press Start 2P";
 }
@@ -5,8 +11,8 @@ html, body, pre, code, kbd, samp {
 html,
 body {
   height: 100%;
-  color: #4A422F;
-  background-color: #FEBC58;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
   text-align: center;
   font-size: 4vw;
 }
@@ -62,10 +68,14 @@ footer {
 }
 
 a {
-  color: #5E8EB3;
-  filter: drop-shadow(1px 1px 1px #5E8EB3); 
+  color: var(--main-link-color);
+  filter: drop-shadow(1px 1px 1px var(--main-link-color)); 
   text-decoration: none;
   font-size: 24px;
+}
+
+a:hover {
+  color: var(--main-link-color);
 }
 
 .sm-social-buttons {
@@ -86,7 +96,7 @@ a {
   right: 0px;
   z-index: 999;
   max-height: 100px;
-  color: #333;
+  color: var(--main-text-color);
   text-decoration: none;
   animation-name: show;
   animation-duration: 15s;
@@ -104,7 +114,7 @@ a {
 .github-link > p.nes-balloon {
   padding: 0.2rem 0.5rem;
   font-size: 0.8rem;
-  color: #333;
+  color: var(--main-text-color);
 }
 
 .logo-baloon {
