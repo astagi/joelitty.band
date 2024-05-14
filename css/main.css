@@ -89,7 +89,7 @@ a {
   color: #333;
   text-decoration: none;
   animation-name: show;
-  animation-duration: 4s;
+  animation-duration: 15s;
   animation-delay: 4s;
   animation-iteration-count: 2;
   animation-direction: alternate;
