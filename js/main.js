@@ -9,3 +9,6 @@ const setCSSVar = function (name, value) {
 //     setCSSVar("--main-text-color", "#FCB922")
 //     setCSSVar("--main-bg-color", "#2B006A")
 // }, 3000);
+
+const copyrightSpan = document.querySelector('#copyright-year');
+copyrightSpan.innerHTML = "©2024 - ©" + new Date().getFullYear();
